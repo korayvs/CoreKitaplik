@@ -22,5 +22,10 @@ namespace CoreKitaplik.Controllers
         {
             return View();
         }
+
+        public IActionResult StatikTema()
+        {
+            return View();
+        }
     }
 }
