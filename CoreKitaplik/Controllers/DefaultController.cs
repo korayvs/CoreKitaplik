@@ -17,5 +17,10 @@ namespace CoreKitaplik.Controllers
             };
             return View(ktp);
         }
+
+        public IActionResult Deneme()
+        {
+            return View();
+        }
     }
 }

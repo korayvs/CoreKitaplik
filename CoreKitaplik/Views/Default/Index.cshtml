@@ -1,8 +1,8 @@
 ﻿@model List<CoreKitaplik.Models.Kitaplar>
-@{
+@* @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_LayoutCore.cshtml";
-}
+} *@
 
 <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 
@@ -24,3 +24,12 @@
     }
 
 </table>
+
+<h2>Gelecek Kitaplar</h2>
+@await Component.InvokeAsync("YeniKitaplar")
+
+
+<br />
+@Html.Partial("_PartialPage")
+
+@* @await Html.PartialAsync("_PartialPage") *@
